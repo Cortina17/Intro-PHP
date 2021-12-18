@@ -28,7 +28,7 @@
         <h1>2. Input de texto, de radio y de selector</h1>
 
         <?php echo "
-                <form action='formpost.php' method='post'>
+                <form action='index.php' method='post'>
                     Nombre: <input type='text' name='name'><br>
                     Email: <input type='text' name='email'><br>
                 <input type='submit' value='Enviar'>
