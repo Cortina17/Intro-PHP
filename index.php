@@ -28,8 +28,16 @@
         <h1>2. Input de texto, de radio y de selector</h1>
 
         <?php echo "
-                <input type='text'>"
+                <form action='formpost.php' method='post'>
+                    Nombre: <input type='text' name='name'><br>
+                    Email: <input type='text' name='email'><br>
+                <input type='submit' value='Enviar'>
+                </form>"
         ?>
+        <?php echo"
+                <p>Hola </p>" ?><?php isset($_POST['name']) ? print $_POST['name'] : ''; ?> <br>
+        <?php echo"
+                <p>Tu email es: </p>"?><?php isset($_POST['email']) ? print $_POST['email'] : ''; ?> <br>
 
         <?php echo "
                 <input type='radio' name = 'contact'>
